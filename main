@@ -1,0 +1,8 @@
+expression = list(str(input('Digite uma expressão: ')))
+if '(' in expression or ')' in expression:
+    left = (expression.count('('))
+    right = (expression.count(')'))
+    if right == left:
+        print('Sua expressão está válida')
+    else:
+        print('Sua expressão está errada!')
